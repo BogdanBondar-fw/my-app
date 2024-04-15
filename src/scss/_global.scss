@@ -37,3 +37,22 @@ body {
   margin: 0 auto;
   padding: 0 10px;
 }
+
+.info-email {
+  display: inline-block;
+  font-weight: 600;
+  font-size: 14px;
+  color: $title;
+  margin-bottom: 22px;
+  padding-left: 30px;
+  position: relative;
+  &::before {
+    content: "";
+    background-image: url(../img/envelope.svg);
+    position: absolute;
+    left: 0;
+    top: 8px;
+    width: 16px;
+    height: 12px;
+  }
+}

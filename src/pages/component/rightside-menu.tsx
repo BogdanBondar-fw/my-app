@@ -1,7 +1,6 @@
 import BigLogo from "../../img/big-logo.png";
 import Rectangle from "../../img/rectangle.jpeg";
 import Path from "../../img/path.svg";
-import "../../css/style.css";
 import { Link } from "react-router-dom";
 
 const RightsideMenu = ({

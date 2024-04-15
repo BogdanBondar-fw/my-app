@@ -1,12 +1,12 @@
-import { useState } from "react";
-import "../../css/style.css";
+import React, { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 import Logo from "../../img/logo.svg";
 import IconMenu from "../../img/icon_menu.svg";
 import RightsideMenu from "./rightside-menu";
-import { Link } from "react-router-dom";
 
 const Header = () => {
   const [rightsideMenuActive, setRightsideMenuActive] = useState(false);
+  const location = useLocation();
 
   return (
     <>
@@ -17,29 +17,57 @@ const Header = () => {
               <nav className="menu">
                 <ul className="menu__list">
                   <li className="menu__list-item">
-                    <Link className="menu__list-link" to="about">
+                    <Link
+                      className={`menu__list-link ${
+                        location.pathname === "/about"
+                          ? "menu__list-link--active"
+                          : ""
+                      }`}
+                      to="/about"
+                    >
                       About
                     </Link>
                   </li>
                   <li className="menu__list-item">
-                    <Link className="menu__list-link" to="gallery">
+                    <Link
+                      className={`menu__list-link ${
+                        location.pathname === "/gallery"
+                          ? "menu__list-link--active"
+                          : ""
+                      }`}
+                      to="/gallery"
+                    >
                       Gallery
                     </Link>
                   </li>
                 </ul>
               </nav>
-              <Link className="logo" to="main">
+              <Link className="logo" to="/main">
                 <img src={Logo} alt="logo" />
               </Link>
               <nav className="menu">
                 <ul className="menu__list">
                   <li className="menu__list-item">
-                    <Link className="menu__list-link" to="blog">
+                    <Link
+                      className={`menu__list-link ${
+                        location.pathname === "/blog"
+                          ? "menu__list-link--active"
+                          : ""
+                      }`}
+                      to="/blog"
+                    >
                       Blog
                     </Link>
                   </li>
                   <li className="menu__list-item">
-                    <Link className="menu__list-link" to="contact">
+                    <Link
+                      className={`menu__list-link ${
+                        location.pathname === "/contact"
+                          ? "menu__list-link--active"
+                          : ""
+                      }`}
+                      to="/contact"
+                    >
                       Contact
                     </Link>
                   </li>

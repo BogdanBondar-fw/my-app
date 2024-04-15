@@ -1,4 +1,4 @@
-import "../../css/style.css";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -14,12 +14,12 @@ const Footer = () => {
                     Keffiyeh poutine etsy, paleo cray put a bird on it
                     microdosing schlitz you probably occupy
                   </p>
-                  <a
-                    className="footer__info-email"
-                    href="mailto:ouremailaddress@email.com"
+                  <Link
+                    className="info-email"
+                    to="mailto:ouremailaddress@email.com"
                   >
                     ouremailaddress@email.com
-                  </a>
+                  </Link>
                   <form className="footer__form">
                     <input
                       className="footer__form-input"
@@ -33,67 +33,67 @@ const Footer = () => {
                 </div>
                 <ul className="footer__social">
                   <li className="footer__social-item">
-                    <a
+                    <Link
                       className="footer__social-link footer__social-link--facebook"
-                      href="#"
+                      to="https://www.facebook.com/"
                     >
                       Facebook
-                    </a>
+                    </Link>
                   </li>
                   <li className="footer__social-item">
-                    <a
+                    <Link
                       className="footer__social-link footer__social-link--instagram"
-                      href="#"
+                      to="https://www.instagram.com/"
                     >
                       Instagram
-                    </a>
+                    </Link>
                   </li>
                   <li className="footer__social-item">
-                    <a
+                    <Link
                       className="footer__social-link footer__social-link--pinterest"
-                      href="#"
+                      to="https://www.pinterest.com/"
                     >
                       Pinterest
-                    </a>
+                    </Link>
                   </li>
                   <li className="footer__social-item">
-                    <a
+                    <Link
                       className="footer__social-link footer__social-link--whatsapp"
-                      href="#"
+                      to="https://web.whatsapp.com/"
                     >
                       WhatsApp
-                    </a>
+                    </Link>
                   </li>
                   <li className="footer__social-item">
-                    <a
+                    <Link
                       className="footer__social-link footer__social-link--youtube"
-                      href="#"
+                      to="https://www.youtube.com/"
                     >
                       YouTube
-                    </a>
+                    </Link>
                   </li>
                 </ul>
                 <nav className="footer__menu">
                   <ul className="footer__menu-list">
                     <li className="footer__menu-item">
-                      <a className="footer__menu-link" href="#">
+                      <Link className="footer__menu-link" to="/delivery">
                         Delivery
-                      </a>
+                      </Link>
                     </li>
                     <li className="footer__menu-item">
-                      <a className="footer__menu-link" href="#">
+                      <Link className="footer__menu-link" to="/faq">
                         FAQ
-                      </a>
+                      </Link>
                     </li>
                     <li className="footer__menu-item">
-                      <a className="footer__menu-link" href="#">
+                      <Link className="footer__menu-link" to="/help">
                         Help
-                      </a>
+                      </Link>
                     </li>
                     <li className="footer__menu-item">
-                      <a className="footer__menu-link" href="#">
+                      <Link className="footer__menu-link" to="/moreAbout">
                         More About Us
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </nav>

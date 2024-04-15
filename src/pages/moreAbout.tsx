@@ -1,9 +1,8 @@
 import { Link } from "react-router-dom";
-import MixGallery from "./component/mixitupgallery";
 
 import "../css/style.css";
 
-const Gallery = () => {
+const MoreAbout = () => {
   return (
     <>
       <div className="wrapper">
@@ -17,17 +16,16 @@ const Gallery = () => {
                   </Link>
                 </li>
                 <li className="breadcrumbs__item">
-                  <Link className="breadcrumbs__link" to="/gallery">
-                    Gallery
+                  <Link className="breadcrumbs__link" to="/moreAbout">
+                    More About Us
                   </Link>
                 </li>
               </ul>
             </div>
           </div>
-          <MixGallery />
         </main>
       </div>
     </>
   );
 };
-export default Gallery;
+export default MoreAbout;

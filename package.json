@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@fancyapps/fancybox": "^3.5.7",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -12,6 +13,7 @@
     "@types/slick-carousel": "^1.6.40",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-modal": "^3.16.1",
     "react-router-dom": "^6.22.3",
     "react-scripts": "^5.0.1",
     "react-slick": "^0.30.2",
@@ -49,8 +51,10 @@
     "@types/body-parser": "^1.19.5",
     "@types/react": "^18.2.72",
     "@types/react-dom": "^18.2.22",
+    "@types/react-modal": "^3.16.3",
     "gulp": "^5.0.0",
-    "gulp-sass": "^5.1.0"
+    "gulp-sass": "^5.1.0",
+    "mixitup": "^3.3.1"
   },
   "author": "Bogdan",
   "license": "ISC"
