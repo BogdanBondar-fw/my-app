@@ -44,9 +44,8 @@ const Main: React.FC = () => {
                 <div className="top__slider-info">
                   <h2 className="top__slider-title">Furniture collection1</h2>
                   <p className="top__slider-text">
-                    Deep v you probably haven't heard of them banh mi synth
-                    actually affogato. Aesthetic lyft ethical drinking vinegar
-                    austint
+                    Deep v you probably haven't heard of them banh mi synth actually affogato. Aesthetic lyft ethical
+                    drinking vinegar austint
                   </p>
                 </div>
               </div>
@@ -55,9 +54,8 @@ const Main: React.FC = () => {
                 <div className="top__slider-info">
                   <h2 className="top__slider-title">Furniture collection2</h2>
                   <p className="top__slider-text">
-                    Deep v you probably haven't heard of them banh mi synth
-                    actually affogato. Aesthetic lyft ethical drinking vinegar
-                    austint
+                    Deep v you probably haven't heard of them banh mi synth actually affogato. Aesthetic lyft ethical
+                    drinking vinegar austint
                   </p>
                 </div>
               </div>
@@ -66,9 +64,8 @@ const Main: React.FC = () => {
                 <div className="top__slider-info">
                   <h2 className="top__slider-title">Furniture collection3</h2>
                   <p className="top__slider-text">
-                    Deep v you probably haven't heard of them banh mi synth
-                    actually affogato. Aesthetic lyft ethical drinking vinegar
-                    austint
+                    Deep v you probably haven't heard of them banh mi synth actually affogato. Aesthetic lyft ethical
+                    drinking vinegar austint
                   </p>
                 </div>
               </div>
@@ -79,63 +76,43 @@ const Main: React.FC = () => {
           <div className="container-fluid">
             <h3 className="new-collection-title">Furniture new collection</h3>
             <p className="new-collection-text">
-              Deep v you probably haven't heard of them banh mi synth actually
-              affogato. Aesthetic lyft ethical drinking vinegar austint
+              Deep v you probably haven't heard of them banh mi synth actually affogato. Aesthetic lyft ethical drinking
+              vinegar austint
             </p>
             <div className="collection">
               <Link className="collection__item" to="/gallery">
                 <img className="collection__img" src={Collection1} alt="img" />
                 <div className="collection__info">
-                  <h6 className="collection__info-title">
-                    Truffaut literally trust
-                  </h6>
-                  <p className="collection__info-text">
-                    Living room furntiture | Chair
-                  </p>
+                  <h6 className="collection__info-title">Truffaut literally trust</h6>
+                  <p className="collection__info-text">Living room furntiture | Chair</p>
                 </div>
               </Link>
               <Link className="collection__item" to="/gallery">
                 <img className="collection__img" src={Collection2} alt="img" />
                 <div className="collection__info">
-                  <h6 className="collection__info-title">
-                    Truffaut literally trust
-                  </h6>
-                  <p className="collection__info-text">
-                    Living room furntiture | Chair
-                  </p>
+                  <h6 className="collection__info-title">Truffaut literally trust</h6>
+                  <p className="collection__info-text">Living room furntiture | Chair</p>
                 </div>
               </Link>
               <Link className="collection__item" to="/gallery">
                 <img className="collection__img" src={Collection3} alt="img" />
                 <div className="collection__info">
-                  <h6 className="collection__info-title">
-                    Truffaut literally trust
-                  </h6>
-                  <p className="collection__info-text">
-                    Living room furntiture | Chair
-                  </p>
+                  <h6 className="collection__info-title">Truffaut literally trust</h6>
+                  <p className="collection__info-text">Living room furntiture | Chair</p>
                 </div>
               </Link>
               <Link className="collection__item" to="/gallery">
                 <img className="collection__img" src={Collection4} alt="img" />
                 <div className="collection__info">
-                  <h6 className="collection__info-title">
-                    Truffaut literally trust
-                  </h6>
-                  <p className="collection__info-text">
-                    Living room furntiture | Chair
-                  </p>
+                  <h6 className="collection__info-title">Truffaut literally trust</h6>
+                  <p className="collection__info-text">Living room furntiture | Chair</p>
                 </div>
               </Link>
               <Link className="collection__item" to="/gallery">
                 <img className="collection__img" src={Collection5} alt="img" />
                 <div className="collection__info">
-                  <h6 className="collection__info-title">
-                    Truffaut literally trust
-                  </h6>
-                  <p className="collection__info-text">
-                    Living room furntiture | Chair
-                  </p>
+                  <h6 className="collection__info-title">Truffaut literally trust</h6>
+                  <p className="collection__info-text">Living room furntiture | Chair</p>
                 </div>
               </Link>
             </div>
@@ -145,8 +122,8 @@ const Main: React.FC = () => {
           <div className="container">
             <h2 className="decor__title">Aesthetic ethical drinking</h2>
             <p className="decor__text">
-              Deep v you probably haven't heard of them banh mi synth actually
-              affogato. Artlyft ethical the one drinking vinegar austint
+              Deep v you probably haven't heard of them banh mi synth actually affogato. Artlyft ethical the one
+              drinking vinegar austint
             </p>
           </div>
         </section>
@@ -156,41 +133,24 @@ const Main: React.FC = () => {
             <div className="works-path__items">
               <div className="works-path__items-box">
                 <div className="works-path__item works-path__item--consultation">
-                  <img
-                    className="works-path__item-img"
-                    src={Path1}
-                    alt="img"
-                  ></img>
-                  <h6 className="works-path__item-title">
-                    Designer Consultation
-                  </h6>
+                  <img className="works-path__item-img" src={Path1} alt="img"></img>
+                  <h6 className="works-path__item-title">Designer Consultation</h6>
                   <p className="works-path__item-text">
-                    Kinfolk scenester authentic craft beer truffaut irony
-                    intelligentsia YOLO lomo bushwick coloring book.
+                    Kinfolk scenester authentic craft beer truffaut irony intelligentsia YOLO lomo bushwick coloring
+                    book.
                   </p>
                 </div>
                 <div className="works-path__item works-path__item--production">
-                  <img
-                    className="works-path__item-img"
-                    src={Path2}
-                    alt="img"
-                  ></img>
+                  <img className="works-path__item-img" src={Path2} alt="img"></img>
                   <h6 className="works-path__item-title">Production</h6>
-                  <p className="works-path__item-text">
-                    Everyday carry actually neutra authentic kogi shabby chic
-                  </p>
+                  <p className="works-path__item-text">Everyday carry actually neutra authentic kogi shabby chic</p>
                 </div>
               </div>
               <div className="works-path__item works-path__item--measurements">
-                <img
-                  className="works-path__item-img"
-                  src={Path3}
-                  alt="img"
-                ></img>
+                <img className="works-path__item-img" src={Path3} alt="img"></img>
                 <h6 className="works-path__item-title">Measurements</h6>
                 <p className="works-path__item-text">
-                  Intelligentsia YOLO lomo bushwick coloring book. Semiotics man
-                  bun venmo viral cliche
+                  Intelligentsia YOLO lomo bushwick coloring book. Semiotics man bun venmo viral cliche
                 </p>
               </div>
             </div>
@@ -199,9 +159,7 @@ const Main: React.FC = () => {
         <MixComponent />
         <section className="main-blog">
           <div className="container">
-            <h3 className="main-blog__title">
-              More inspiration ideas in our blog
-            </h3>
+            <h3 className="main-blog__title">More inspiration ideas in our blog</h3>
             <div className="main-blog__items">
               <div className="main-blog__item">
                 <Link className="main-blog__img-link" to="/gallery">
@@ -219,8 +177,7 @@ const Main: React.FC = () => {
                 </div>
                 <Link className="main-blog__item-title" to="/">
                   <h4 className="main-blog__item-title">
-                    Listicle actually selvage activated charcoal for the
-                    drinking vinegar
+                    Listicle actually selvage activated charcoal for the drinking vinegar
                   </h4>
                 </Link>
               </div>
@@ -239,9 +196,7 @@ const Main: React.FC = () => {
                   </Link>
                 </div>
                 <Link className="main-blog__item-title" to="/">
-                  <h4 className="main-blog__item-title">
-                    Red selfies edison bulb four dollar toast humblebrag
-                  </h4>
+                  <h4 className="main-blog__item-title">Red selfies edison bulb four dollar toast humblebrag</h4>
                 </Link>
               </div>
             </div>

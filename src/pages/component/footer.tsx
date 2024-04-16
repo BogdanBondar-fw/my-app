@@ -11,21 +11,13 @@ const Footer = () => {
                 <div className="footer__info">
                   <h6 className="footer__info-title">Contact Us</h6>
                   <p className="footer__info-text">
-                    Keffiyeh poutine etsy, paleo cray put a bird on it
-                    microdosing schlitz you probably occupy
+                    Keffiyeh poutine etsy, paleo cray put a bird on it microdosing schlitz you probably occupy
                   </p>
-                  <Link
-                    className="info-email"
-                    to="mailto:ouremailaddress@email.com"
-                  >
+                  <Link className="info-email" to="mailto:ouremailaddress@email.com">
                     ouremailaddress@email.com
                   </Link>
                   <form className="footer__form">
-                    <input
-                      className="footer__form-input"
-                      type="email"
-                      placeholder="Subscribe by email"
-                    />
+                    <input className="footer__form-input" type="email" placeholder="Subscribe by email" />
                     <button className="footer__form-btn" type="submit">
                       Send
                     </button>
@@ -33,10 +25,7 @@ const Footer = () => {
                 </div>
                 <ul className="footer__social">
                   <li className="footer__social-item">
-                    <Link
-                      className="footer__social-link footer__social-link--facebook"
-                      to="https://www.facebook.com/"
-                    >
+                    <Link className="footer__social-link footer__social-link--facebook" to="https://www.facebook.com/">
                       Facebook
                     </Link>
                   </li>
@@ -57,18 +46,12 @@ const Footer = () => {
                     </Link>
                   </li>
                   <li className="footer__social-item">
-                    <Link
-                      className="footer__social-link footer__social-link--whatsapp"
-                      to="https://web.whatsapp.com/"
-                    >
+                    <Link className="footer__social-link footer__social-link--whatsapp" to="https://web.whatsapp.com/">
                       WhatsApp
                     </Link>
                   </li>
                   <li className="footer__social-item">
-                    <Link
-                      className="footer__social-link footer__social-link--youtube"
-                      to="https://www.youtube.com/"
-                    >
+                    <Link className="footer__social-link footer__social-link--youtube" to="https://www.youtube.com/">
                       YouTube
                     </Link>
                   </li>

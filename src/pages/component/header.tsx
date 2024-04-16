@@ -18,11 +18,7 @@ const Header = () => {
                 <ul className="menu__list">
                   <li className="menu__list-item">
                     <Link
-                      className={`menu__list-link ${
-                        location.pathname === "/about"
-                          ? "menu__list-link--active"
-                          : ""
-                      }`}
+                      className={`menu__list-link ${location.pathname === "/about" ? "menu__list-link--active" : ""}`}
                       to="/about"
                     >
                       About
@@ -30,11 +26,7 @@ const Header = () => {
                   </li>
                   <li className="menu__list-item">
                     <Link
-                      className={`menu__list-link ${
-                        location.pathname === "/gallery"
-                          ? "menu__list-link--active"
-                          : ""
-                      }`}
+                      className={`menu__list-link ${location.pathname === "/gallery" ? "menu__list-link--active" : ""}`}
                       to="/gallery"
                     >
                       Gallery
@@ -49,11 +41,7 @@ const Header = () => {
                 <ul className="menu__list">
                   <li className="menu__list-item">
                     <Link
-                      className={`menu__list-link ${
-                        location.pathname === "/blog"
-                          ? "menu__list-link--active"
-                          : ""
-                      }`}
+                      className={`menu__list-link ${location.pathname === "/blog" ? "menu__list-link--active" : ""}`}
                       to="/blog"
                     >
                       Blog
@@ -61,11 +49,7 @@ const Header = () => {
                   </li>
                   <li className="menu__list-item">
                     <Link
-                      className={`menu__list-link ${
-                        location.pathname === "/contact"
-                          ? "menu__list-link--active"
-                          : ""
-                      }`}
+                      className={`menu__list-link ${location.pathname === "/contact" ? "menu__list-link--active" : ""}`}
                       to="/contact"
                     >
                       Contact
@@ -73,16 +57,10 @@ const Header = () => {
                   </li>
                 </ul>
               </nav>
-              <button
-                className="header__btn"
-                onClick={() => setRightsideMenuActive(!rightsideMenuActive)}
-              >
+              <button className="header__btn" onClick={() => setRightsideMenuActive(!rightsideMenuActive)}>
                 <img src={IconMenu} alt="icon menu" />
               </button>
-              <RightsideMenu
-                active={rightsideMenuActive}
-                setActive={setRightsideMenuActive}
-              />
+              <RightsideMenu active={rightsideMenuActive} setActive={setRightsideMenuActive} />
             </div>
           </div>
         </header>

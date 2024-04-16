@@ -70,103 +70,50 @@ const Contact = () => {
               <h3 className="contact__title">Contact Us</h3>
               <ul className="contact__social">
                 <li className="contact__social-item">
-                  <Link
-                    className="contact__social-link"
-                    to="https://www.facebook.com/"
-                  >
-                    <img
-                      className="contact__social-img"
-                      src={Facebook}
-                      alt="img"
-                    />
+                  <Link className="contact__social-link" to="https://www.facebook.com/">
+                    <img className="contact__social-img" src={Facebook} alt="img" />
                   </Link>
                 </li>
                 <li className="contact__social-item">
-                  <Link
-                    className="contact__social-link"
-                    to="https://www.instagram.com/"
-                  >
-                    <img
-                      className="contact__social-img"
-                      src={Instagram}
-                      alt="img"
-                    />
+                  <Link className="contact__social-link" to="https://www.instagram.com/">
+                    <img className="contact__social-img" src={Instagram} alt="img" />
                   </Link>
                 </li>
                 <li className="contact__social-item">
-                  <Link
-                    className="contact__social-link"
-                    to="https://www.pinterest.com/"
-                  >
-                    <img
-                      className="contact__social-img"
-                      src={Pinterest}
-                      alt="img"
-                    />
+                  <Link className="contact__social-link" to="https://www.pinterest.com/">
+                    <img className="contact__social-img" src={Pinterest} alt="img" />
                   </Link>
                 </li>
                 <li className="contact__social-item">
-                  <Link
-                    className="contact__social-link"
-                    to="https://web.whatsapp.com/"
-                  >
-                    <img
-                      className="contact__social-img"
-                      src={Whatsapp}
-                      alt="img"
-                    />
+                  <Link className="contact__social-link" to="https://web.whatsapp.com/">
+                    <img className="contact__social-img" src={Whatsapp} alt="img" />
                   </Link>
                 </li>
                 <li className="contact__social-item">
-                  <Link
-                    className="contact__social-link"
-                    to="https://www.youtube.com/"
-                  >
-                    <img
-                      className="contact__social-img"
-                      src={YouTybe}
-                      alt="img"
-                    />
+                  <Link className="contact__social-link" to="https://www.youtube.com/">
+                    <img className="contact__social-img" src={YouTybe} alt="img" />
                   </Link>
                 </li>
               </ul>
               <div className="contact__box">
                 <p className="contact__text">
-                  Vexillologist vape microdosing freegan pork belly deep v
-                  direct trade cray single-origin coffee street art. Viral
-                  shaman mustache master cleanse, pour-over affogato poutine
-                  copper mug marfa fanny pack normcore. Lo-fi pop-up banjo
-                  portland, echo park hammock
+                  Vexillologist vape microdosing freegan pork belly deep v direct trade cray single-origin coffee street
+                  art. Viral shaman mustache master cleanse, pour-over affogato poutine copper mug marfa fanny pack
+                  normcore. Lo-fi pop-up banjo portland, echo park hammock
                 </p>
                 <Link className="contact__phone" to="tel:+14158297934">
                   (415) 829-7934
                 </Link>
                 <div className="contact__st">725 Green St</div>
-                <div className="contact__city">
-                  San Francisco, California(CA), 94133
-                </div>
-                <Link
-                  className="info-email"
-                  to="mailto:ouremailaddress@email.com"
-                >
+                <div className="contact__city">San Francisco, California(CA), 94133</div>
+                <Link className="info-email" to="mailto:ouremailaddress@email.com">
                   ouremailaddress@email.com
                 </Link>
               </div>
               <form className="contact__form">
-                <input
-                  className="contact__form-input"
-                  placeholder="Your name"
-                  type="text"
-                />
-                <input
-                  className="contact__form-input"
-                  placeholder="Your e-mail"
-                  type="email"
-                />
-                <textarea
-                  className="contact__form-area"
-                  placeholder="Your message"
-                ></textarea>
+                <input className="contact__form-input" placeholder="Your name" type="text" />
+                <input className="contact__form-input" placeholder="Your e-mail" type="email" />
+                <textarea className="contact__form-area" placeholder="Your message"></textarea>
                 <button className="contact__form-btn" type="submit">
                   Send
                 </button>
@@ -177,362 +124,182 @@ const Contact = () => {
             <Slider className="contact-slider" {...settingsCon}>
               <div className="contact-slider__item">
                 <Link className="contact-slider__link" to="/gallery">
-                  <img
-                    className="contact-slider__img"
-                    src={SliderImgCon1}
-                    alt="img"
-                  />
-                  <p className="contact-slider__title">
-                    Truffaut literally trust
-                  </p>
+                  <img className="contact-slider__img" src={SliderImgCon1} alt="img" />
+                  <p className="contact-slider__title">Truffaut literally trust</p>
                 </Link>
               </div>
               <div className="contact-slider__item">
                 <Link className="contact-slider__link" to="/gallery">
-                  <img
-                    className="contact-slider__img"
-                    src={SliderImgCon2}
-                    alt="img"
-                  />
-                  <p className="contact-slider__title">
-                    Truffaut literally trust
-                  </p>
+                  <img className="contact-slider__img" src={SliderImgCon2} alt="img" />
+                  <p className="contact-slider__title">Truffaut literally trust</p>
                 </Link>
               </div>
               <div className="contact-slider__item">
                 <Link className="contact-slider__link" to="/gallery">
-                  <img
-                    className="contact-slider__img"
-                    src={SliderImgCon3}
-                    alt="img"
-                  />
-                  <p className="contact-slider__title">
-                    Truffaut literally trust
-                  </p>
+                  <img className="contact-slider__img" src={SliderImgCon3} alt="img" />
+                  <p className="contact-slider__title">Truffaut literally trust</p>
                 </Link>
               </div>
               <div className="contact-slider__item">
                 <Link className="contact-slider__link" to="/gallery">
-                  <img
-                    className="contact-slider__img"
-                    src={SliderImgCon4}
-                    alt="img"
-                  />
-                  <p className="contact-slider__title">
-                    Truffaut literally trust
-                  </p>
+                  <img className="contact-slider__img" src={SliderImgCon4} alt="img" />
+                  <p className="contact-slider__title">Truffaut literally trust</p>
                 </Link>
               </div>
               <div className="contact-slider__item">
                 <Link className="contact-slider__link" to="/gallery">
-                  <img
-                    className="contact-slider__img"
-                    src={SliderImgCon5}
-                    alt="img"
-                  />
-                  <p className="contact-slider__title">
-                    Truffaut literally trust
-                  </p>
+                  <img className="contact-slider__img" src={SliderImgCon5} alt="img" />
+                  <p className="contact-slider__title">Truffaut literally trust</p>
                 </Link>
               </div>
               <div className="contact-slider__item">
                 <Link className="contact-slider__link" to="/gallery">
-                  <img
-                    className="contact-slider__img"
-                    src={SliderImgCon6}
-                    alt="img"
-                  />
-                  <p className="contact-slider__title">
-                    Truffaut literally trust
-                  </p>
+                  <img className="contact-slider__img" src={SliderImgCon6} alt="img" />
+                  <p className="contact-slider__title">Truffaut literally trust</p>
                 </Link>
               </div>
               <div className="contact-slider__item">
                 <Link className="contact-slider__link" to="/gallery">
-                  <img
-                    className="contact-slider__img"
-                    src={SliderImgCon7}
-                    alt="img"
-                  />
-                  <p className="contact-slider__title">
-                    Truffaut literally trust
-                  </p>
+                  <img className="contact-slider__img" src={SliderImgCon7} alt="img" />
+                  <p className="contact-slider__title">Truffaut literally trust</p>
                 </Link>
               </div>
               <div className="contact-slider__item">
                 <Link className="contact-slider__link" to="/gallery">
-                  <img
-                    className="contact-slider__img"
-                    src={SliderImgCon8}
-                    alt="img"
-                  />
-                  <p className="contact-slider__title">
-                    Truffaut literally trust
-                  </p>
+                  <img className="contact-slider__img" src={SliderImgCon8} alt="img" />
+                  <p className="contact-slider__title">Truffaut literally trust</p>
                 </Link>
               </div>
               <div className="contact-slider__item">
                 <Link className="contact-slider__link" to="/gallery">
-                  <img
-                    className="contact-slider__img"
-                    src={SliderImgCon9}
-                    alt="img"
-                  />
-                  <p className="contact-slider__title">
-                    Truffaut literally trust
-                  </p>
+                  <img className="contact-slider__img" src={SliderImgCon9} alt="img" />
+                  <p className="contact-slider__title">Truffaut literally trust</p>
                 </Link>
               </div>
               <div className="contact-slider__item">
                 <Link className="contact-slider__link" to="/gallery">
-                  <img
-                    className="contact-slider__img"
-                    src={SliderImgCon10}
-                    alt="img"
-                  />
-                  <p className="contact-slider__title">
-                    Truffaut literally trust
-                  </p>
+                  <img className="contact-slider__img" src={SliderImgCon10} alt="img" />
+                  <p className="contact-slider__title">Truffaut literally trust</p>
                 </Link>
               </div>
               <div className="contact-slider__item">
                 <Link className="contact-slider__link" to="/gallery">
-                  <img
-                    className="contact-slider__img"
-                    src={SliderImgCon1}
-                    alt="img"
-                  />
-                  <p className="contact-slider__title">
-                    Truffaut literally trust
-                  </p>
+                  <img className="contact-slider__img" src={SliderImgCon1} alt="img" />
+                  <p className="contact-slider__title">Truffaut literally trust</p>
                 </Link>
               </div>
               <div className="contact-slider__item">
                 <Link className="contact-slider__link" to="/gallery">
-                  <img
-                    className="contact-slider__img"
-                    src={SliderImgCon2}
-                    alt="img"
-                  />
-                  <p className="contact-slider__title">
-                    Truffaut literally trust
-                  </p>
+                  <img className="contact-slider__img" src={SliderImgCon2} alt="img" />
+                  <p className="contact-slider__title">Truffaut literally trust</p>
                 </Link>
               </div>
               <div className="contact-slider__item">
                 <Link className="contact-slider__link" to="/gallery">
-                  <img
-                    className="contact-slider__img"
-                    src={SliderImgCon3}
-                    alt="img"
-                  />
-                  <p className="contact-slider__title">
-                    Truffaut literally trust
-                  </p>
+                  <img className="contact-slider__img" src={SliderImgCon3} alt="img" />
+                  <p className="contact-slider__title">Truffaut literally trust</p>
                 </Link>
               </div>
               <div className="contact-slider__item">
                 <Link className="contact-slider__link" to="/gallery">
-                  <img
-                    className="contact-slider__img"
-                    src={SliderImgCon4}
-                    alt="img"
-                  />
-                  <p className="contact-slider__title">
-                    Truffaut literally trust
-                  </p>
+                  <img className="contact-slider__img" src={SliderImgCon4} alt="img" />
+                  <p className="contact-slider__title">Truffaut literally trust</p>
                 </Link>
               </div>
               <div className="contact-slider__item">
                 <Link className="contact-slider__link" to="/gallery">
-                  <img
-                    className="contact-slider__img"
-                    src={SliderImgCon5}
-                    alt="img"
-                  />
-                  <p className="contact-slider__title">
-                    Truffaut literally trust
-                  </p>
+                  <img className="contact-slider__img" src={SliderImgCon5} alt="img" />
+                  <p className="contact-slider__title">Truffaut literally trust</p>
                 </Link>
               </div>
               <div className="contact-slider__item">
                 <Link className="contact-slider__link" to="/gallery">
-                  <img
-                    className="contact-slider__img"
-                    src={SliderImgCon6}
-                    alt="img"
-                  />
-                  <p className="contact-slider__title">
-                    Truffaut literally trust
-                  </p>
+                  <img className="contact-slider__img" src={SliderImgCon6} alt="img" />
+                  <p className="contact-slider__title">Truffaut literally trust</p>
                 </Link>
               </div>
               <div className="contact-slider__item">
                 <Link className="contact-slider__link" to="/gallery">
-                  <img
-                    className="contact-slider__img"
-                    src={SliderImgCon7}
-                    alt="img"
-                  />
-                  <p className="contact-slider__title">
-                    Truffaut literally trust
-                  </p>
+                  <img className="contact-slider__img" src={SliderImgCon7} alt="img" />
+                  <p className="contact-slider__title">Truffaut literally trust</p>
                 </Link>
               </div>
               <div className="contact-slider__item">
                 <Link className="contact-slider__link" to="/gallery">
-                  <img
-                    className="contact-slider__img"
-                    src={SliderImgCon8}
-                    alt="img"
-                  />
-                  <p className="contact-slider__title">
-                    Truffaut literally trust
-                  </p>
+                  <img className="contact-slider__img" src={SliderImgCon8} alt="img" />
+                  <p className="contact-slider__title">Truffaut literally trust</p>
                 </Link>
               </div>
               <div className="contact-slider__item">
                 <Link className="contact-slider__link" to="/gallery">
-                  <img
-                    className="contact-slider__img"
-                    src={SliderImgCon9}
-                    alt="img"
-                  />
-                  <p className="contact-slider__title">
-                    Truffaut literally trust
-                  </p>
+                  <img className="contact-slider__img" src={SliderImgCon9} alt="img" />
+                  <p className="contact-slider__title">Truffaut literally trust</p>
                 </Link>
               </div>
               <div className="contact-slider__item">
                 <Link className="contact-slider__link" to="/gallery">
-                  <img
-                    className="contact-slider__img"
-                    src={SliderImgCon10}
-                    alt="img"
-                  />
-                  <p className="contact-slider__title">
-                    Truffaut literally trust
-                  </p>
+                  <img className="contact-slider__img" src={SliderImgCon10} alt="img" />
+                  <p className="contact-slider__title">Truffaut literally trust</p>
                 </Link>
               </div>
               <div className="contact-slider__item">
                 <Link className="contact-slider__link" to="/gallery">
-                  <img
-                    className="contact-slider__img"
-                    src={SliderImgCon1}
-                    alt="img"
-                  />
-                  <p className="contact-slider__title">
-                    Truffaut literally trust
-                  </p>
+                  <img className="contact-slider__img" src={SliderImgCon1} alt="img" />
+                  <p className="contact-slider__title">Truffaut literally trust</p>
                 </Link>
               </div>{" "}
               <div className="contact-slider__item">
                 <Link className="contact-slider__link" to="/gallery">
-                  <img
-                    className="contact-slider__img"
-                    src={SliderImgCon2}
-                    alt="img"
-                  />
-                  <p className="contact-slider__title">
-                    Truffaut literally trust
-                  </p>
+                  <img className="contact-slider__img" src={SliderImgCon2} alt="img" />
+                  <p className="contact-slider__title">Truffaut literally trust</p>
                 </Link>
               </div>{" "}
               <div className="contact-slider__item">
                 <Link className="contact-slider__link" to="/gallery">
-                  <img
-                    className="contact-slider__img"
-                    src={SliderImgCon3}
-                    alt="img"
-                  />
-                  <p className="contact-slider__title">
-                    Truffaut literally trust
-                  </p>
+                  <img className="contact-slider__img" src={SliderImgCon3} alt="img" />
+                  <p className="contact-slider__title">Truffaut literally trust</p>
                 </Link>
               </div>{" "}
               <div className="contact-slider__item">
                 <Link className="contact-slider__link" to="/gallery">
-                  <img
-                    className="contact-slider__img"
-                    src={SliderImgCon4}
-                    alt="img"
-                  />
-                  <p className="contact-slider__title">
-                    Truffaut literally trust
-                  </p>
+                  <img className="contact-slider__img" src={SliderImgCon4} alt="img" />
+                  <p className="contact-slider__title">Truffaut literally trust</p>
                 </Link>
               </div>{" "}
               <div className="contact-slider__item">
                 <Link className="contact-slider__link" to="/gallery">
-                  <img
-                    className="contact-slider__img"
-                    src={SliderImgCon5}
-                    alt="img"
-                  />
-                  <p className="contact-slider__title">
-                    Truffaut literally trust
-                  </p>
+                  <img className="contact-slider__img" src={SliderImgCon5} alt="img" />
+                  <p className="contact-slider__title">Truffaut literally trust</p>
                 </Link>
               </div>{" "}
               <div className="contact-slider__item">
                 <Link className="contact-slider__link" to="/gallery">
-                  <img
-                    className="contact-slider__img"
-                    src={SliderImgCon6}
-                    alt="img"
-                  />
-                  <p className="contact-slider__title">
-                    Truffaut literally trust
-                  </p>
+                  <img className="contact-slider__img" src={SliderImgCon6} alt="img" />
+                  <p className="contact-slider__title">Truffaut literally trust</p>
                 </Link>
               </div>{" "}
               <div className="contact-slider__item">
                 <Link className="contact-slider__link" to="/gallery">
-                  <img
-                    className="contact-slider__img"
-                    src={SliderImgCon7}
-                    alt="img"
-                  />
-                  <p className="contact-slider__title">
-                    Truffaut literally trust
-                  </p>
+                  <img className="contact-slider__img" src={SliderImgCon7} alt="img" />
+                  <p className="contact-slider__title">Truffaut literally trust</p>
                 </Link>
               </div>{" "}
               <div className="contact-slider__item">
                 <Link className="contact-slider__link" to="/gallery">
-                  <img
-                    className="contact-slider__img"
-                    src={SliderImgCon8}
-                    alt="img"
-                  />
-                  <p className="contact-slider__title">
-                    Truffaut literally trust
-                  </p>
+                  <img className="contact-slider__img" src={SliderImgCon8} alt="img" />
+                  <p className="contact-slider__title">Truffaut literally trust</p>
                 </Link>
               </div>{" "}
               <div className="contact-slider__item">
                 <Link className="contact-slider__link" to="/gallery">
-                  <img
-                    className="contact-slider__img"
-                    src={SliderImgCon9}
-                    alt="img"
-                  />
-                  <p className="contact-slider__title">
-                    Truffaut literally trust
-                  </p>
+                  <img className="contact-slider__img" src={SliderImgCon9} alt="img" />
+                  <p className="contact-slider__title">Truffaut literally trust</p>
                 </Link>
               </div>{" "}
               <div className="contact-slider__item">
                 <Link className="contact-slider__link" to="/gallery">
-                  <img
-                    className="contact-slider__img"
-                    src={SliderImgCon10}
-                    alt="img"
-                  />
-                  <p className="contact-slider__title">
-                    Truffaut literally trust
-                  </p>
+                  <img className="contact-slider__img" src={SliderImgCon10} alt="img" />
+                  <p className="contact-slider__title">Truffaut literally trust</p>
                 </Link>
               </div>
             </Slider>
