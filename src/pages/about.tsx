@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import PlayBtn from "../img/play-button.svg";
 import Modal from "react-modal";
 
 import InspirationChair from "../img/inspiration-chair.png";
@@ -11,6 +10,7 @@ import Collection2 from "../img/collection2.jpeg";
 import Collection3 from "../img/collection3.jpeg";
 import Collection4 from "../img/collection4.jpeg";
 import Collection5 from "../img/collection5.jpeg";
+import PlayBtn from "../img/play-button.svg";
 
 import "../css/style.css";
 

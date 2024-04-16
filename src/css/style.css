@@ -887,7 +887,7 @@ body {
   margin-bottom: 10px;
   margin-right: 10px;
   border: 1px solid rgba(54, 56, 56, 0.5);
-  border-radius: 14;
+  border-radius: 14px;
 }
 .blog__social {
   display: flex;
