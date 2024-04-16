@@ -35,7 +35,7 @@ const Blog = () => {
                 <button className="aside__search-btn" type="submit"></button>
               </form>
               <div className="blog__category">
-                <h6 className="blog__category-title"></h6>
+                <h6 className="blog__category-title">1</h6>
                 <ul className="blog__category-list"></ul>
               </div>
             </aside>
