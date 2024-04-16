@@ -105,19 +105,19 @@ const Blog = () => {
                   </div>
                   <div className="blog_tags">
                     <h6 className="blog_tags__title">Tags</h6>
-                    <Link className="blog_tags__link" to="/">
+                    <Link className="blog__tags-link" to="/">
                       Dining room futniture
                     </Link>
-                    <Link className="blog_tags__link" to="/">
+                    <Link className="blog__tags-link" to="/">
                       Chair
                     </Link>
-                    <Link className="blog_tags__link" to="/">
+                    <Link className="blog__tags-link" to="/">
                       Table
                     </Link>
-                    <Link className="blog_tags__link" to="/">
+                    <Link className="blog__tags-link" to="/">
                       Bedroom
                     </Link>
-                    <Link className="blog_tags__link" to="/">
+                    <Link className="blog__tags-link" to="/">
                       Office Furniture
                     </Link>
                   </div>
