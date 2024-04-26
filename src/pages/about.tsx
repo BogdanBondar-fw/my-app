@@ -12,8 +12,6 @@ import Collection4 from "../img/collection4.jpeg";
 import Collection5 from "../img/collection5.jpeg";
 import PlayBtn from "../img/play-button.svg";
 
-import "../css/style.css";
-
 const About = () => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
 

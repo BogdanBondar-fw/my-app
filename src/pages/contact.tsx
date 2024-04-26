@@ -17,8 +17,6 @@ import SliderImgCon8 from "../img/sliderimgcon8.jpeg";
 import SliderImgCon9 from "../img/sliderimgcon9.jpeg";
 import SliderImgCon10 from "../img/sliderimgcon10.jpeg";
 
-import "../css/style.css";
-
 const Contact = () => {
   const settingsCon = {
     dots: true,
@@ -31,13 +29,14 @@ const Contact = () => {
     pauseOnFocus: false,
     pauseOnHover: false,
     autoplaySpeed: 5000,
+    arrows: false,
   };
 
   return (
     <>
       <div className="wrapper">
         <main>
-          <div className="breadcrumbs">
+          <div className="breadcrumbs indexZ">
             <div className="container">
               <ul className="breadcrumbs__list">
                 <li className="breadcrumbs__item">

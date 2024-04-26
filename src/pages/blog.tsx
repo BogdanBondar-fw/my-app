@@ -1,6 +1,7 @@
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import Slider from "react-slick";
 import Modal from "react-modal";
-import { useState } from "react";
 
 import SearchImg from "../img/search-img.svg";
 import Facebook from "../img/facebook.svg";
@@ -10,11 +11,27 @@ import Whatsapp from "../img/whatsapp.svg";
 import YouTybe from "../img/youtube.svg";
 import BlogImg1 from "../img/blog-img1.jpeg";
 import PlayBtn from "../img/play-button.svg";
+import BlogImg2 from "../img/blog-img2.jpeg";
+import PopupIMG from "../img/blog-img3.jpeg";
 
-import "../css/style.css";
-
-const Blog = () => {
+const Blog: React.FC = () => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
+  const [visiblePosts, setVisiblePosts] = useState(3);
+
+  const settingsBlog = {
+    infinite: true,
+    speed: 1000,
+    cssEase: "linear",
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    pauseOnFocus: false,
+    pauseOnHover: false,
+    arrows: true,
+  };
+
+  const showMorePosts = () => {
+    setVisiblePosts((prevCount) => prevCount + 3);
+  };
 
   return (
     <>
@@ -29,7 +46,7 @@ const Blog = () => {
                   </Link>
                 </li>
                 <li className="breadcrumbs__item">
-                  <Link className="breadcrumbs__link" to="/about">
+                  <Link className="breadcrumbs__link" to="/blog">
                     Blog
                   </Link>
                 </li>
@@ -40,58 +57,135 @@ const Blog = () => {
             <div className="container">
               <div className="blog__inner">
                 <div className="blog__items">
-                  <div className="blog__item">
-                    <img className="blog__item-img" src={BlogImg1} alt="img" />
-                    <div className="blog__item-info">
-                      <span className="blog__item-date">August 15, 2020</span> |
-                      <Link className="blog__item-author" to="/">
-                        by Ann Summers
-                      </Link>
-                      |
-                      <Link className="blog__item-theme" to="/">
-                        Bedroom Furniture
-                      </Link>
+                  {[...Array(visiblePosts)].map((_, index) => (
+                    <div key={index} className="blog__item">
+                      {index === 1 && (
+                        <div className="blog__item">
+                          <img className="blog__item-img" src={BlogImg1} alt="img" />
+                          <div className="blog__item-info">
+                            <span className="blog__item-date">August 15, 2020</span> |
+                            <Link className="blog__item-author" to="/">
+                              by Ann Summers
+                            </Link>
+                            |
+                            <Link className="blog__item-theme" to="/">
+                              Bedroom Furniture
+                            </Link>
+                          </div>
+                          <Link to="/blog-page1">
+                            <h3 className="blog__item-title">
+                              Red selfies edison bulb four dollar toast humblebrag for the furniture
+                            </h3>
+                          </Link>
+                          <p className="blog__item-text">
+                            Everyday carry actually neutra authentic kogi shabby chic migas small batch craft beer.
+                            Literally williamsburg tote bag farm-to-table mustache ugh deep v irony. Af man bun copper
+                            mug iPhone enamel pin pug selvage hammock palo santo godard thundercats coloring book yuccie
+                            woke. Ugh pok pok taxidermy pabst enamel pin edison bulb farm-to-table
+                          </p>
+                        </div>
+                      )}
+                      {index === 2 && (
+                        <blockquote className="blog__blockquote">
+                          “Simplicity is not the goal. It is the by-product of a good idea and modest expectations”
+                          <div className="blog__blockquote-author">Paul Rand</div>
+                        </blockquote>
+                      )}
+                      {index === 3 && (
+                        <div className="blog__item blog__popup">
+                          <div className="blog__popup-box">
+                            <div className="blog__popup-img">
+                              <img className="blog__popup-img" src={PopupIMG} alt="img" />
+                            </div>
+                            <button className="blog__popup-play" onClick={() => setModalIsOpen(true)}>
+                              <img className="blog__popup-imgbtn" src={PlayBtn} alt="play button" />
+                            </button>
+                          </div>
+                          <Modal
+                            isOpen={modalIsOpen}
+                            onRequestClose={() => setModalIsOpen(false)}
+                            contentLabel="Example Modal"
+                          >
+                            <iframe
+                              width="99%"
+                              height="99%"
+                              src="https://www.youtube.com/embed/JKX0iqwuDpQ?autoplay=1"
+                              title="YouTube video player"
+                              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                              referrerPolicy="strict-origin-when-cross-origin"
+                              allowFullScreen
+                              ref={(frame) => {
+                                if (frame) frame.setAttribute("frameBorder", "0");
+                              }}
+                            ></iframe>
+                          </Modal>
+                          <div className="blog__item-info">
+                            <span className="blog__item-date">August 12, 2020</span> |
+                            <Link className="blog__item-author" to="/">
+                              by Lux Morningstar
+                            </Link>
+                            |
+                            <Link className="blog__item-theme" to="/">
+                              Design
+                            </Link>
+                          </div>
+                          <Link to="/blog-page2">
+                            <h3 className="blog__item-title">
+                              Red selfies edison bulb four dollar toast humblebrag for the furniture
+                            </h3>
+                          </Link>
+                          <p className="blog__item-text">
+                            Everyday carry actually neutra authentic kogi shabby chic migas small batch craft beer.
+                            Literally williamsburg tote bag farm-to-table mustache ugh deep v irony. Af man bun copper
+                            mug iPhone enamel pin pug selvage hammock palo santo godard thundercats coloring book yuccie
+                            woke. Ugh pok pok taxidermy pabst enamel pin edison bulb farm-to-table
+                          </p>
+                        </div>
+                      )}
+                      {index === 4 && (
+                        <div className="blog__item blog__slider">
+                          <div className="blog__slider-box">
+                            <Slider className="blog-slider" {...settingsBlog}>
+                              <div className="blog-slider__item">
+                                <Link className="blog-slider__link" to="/gallery">
+                                  <img className="blog-slider__img" src={BlogImg2} alt="img" />
+                                </Link>
+                              </div>
+                              <div className="blog-slider__item">
+                                <Link className="blog-slider__link" to="/gallery">
+                                  <img className="blog-slider__img" src={BlogImg2} alt="img" />
+                                </Link>
+                              </div>
+                              <div className="blog-slider__item">
+                                <Link className="blog-slider__link" to="/gallery">
+                                  <img className="blog-slider__img" src={BlogImg2} alt="img" />
+                                </Link>
+                              </div>
+                            </Slider>
+                          </div>
+                          <div className="blog__item-info">
+                            <span className="blog__item-date">August 18, 2020</span> |
+                            <Link className="blog__item-author" to="/">
+                              by Ann Summers
+                            </Link>
+                            |
+                            <Link className="blog__item-theme" to="/">
+                              Table Furniture
+                            </Link>
+                          </div>
+                          <Link to="/blog-page3">
+                            <h3 className="blog__item-title">Semiotics fixie four dollar toast, next level woke</h3>
+                          </Link>
+                          <p className="blog__item-text">
+                            Everyday carry actually neutra authentic kogi shabby chic migas small batch craft beer.
+                            Literally williamsburg tote bag farm-to-table mustache ugh deep v irony. Af man bun copper
+                            mug iPhone enamel pin pug selvage hammock palo santo godard thundercats coloring book yuccie
+                            woke. Ugh pok pok taxidermy pabst enamel pin edison bulb farm-to-table
+                          </p>
+                        </div>
+                      )}
                     </div>
-                    <h3 className="blog__item-title">
-                      Red selfies edison bulb four dollar toast humblebrag for the furniture
-                    </h3>
-                    <p className="blog__item-text">
-                      Everyday carry actually neutra authentic kogi shabby chic migas small batch craft beer. Literally
-                      williamsburg tote bag farm-to-table mustache ugh deep v irony. Af man bun copper mug iPhone enamel
-                      pin pug selvage hammock palo santo godard thundercats coloring book yuccie woke. Ugh pok pok
-                      taxidermy pabst enamel pin edison bulb farm-to-table
-                    </p>
-                  </div>
-                  <blockquote className="blog__blockquote">
-                    “Simplicity is not the goal. It is the by-product of a good idea and modest expectations”
-                    <div className="blog__blockquote-author">Paul Rand</div>
-                  </blockquote>
-                  <div className="blog__item blog__popup">
-                    <div className="about__popup">
-                      <button className="about__popup-play" onClick={() => setModalIsOpen(true)}>
-                        <img className="about__popup-imgbtn" src={PlayBtn} alt="play button" />
-                      </button>
-                    </div>
-                    <Modal
-                      isOpen={modalIsOpen}
-                      onRequestClose={() => setModalIsOpen(false)}
-                      contentLabel="Example Modal"
-                    >
-                      <iframe
-                        width="99%"
-                        height="99%"
-                        src="https://www.youtube.com/embed/JKX0iqwuDpQ?autoplay=1"
-                        title="YouTube video player"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerPolicy="strict-origin-when-cross-origin"
-                        allowFullScreen
-                        ref={(frame) => {
-                          if (frame) frame.setAttribute("frameBorder", "0");
-                        }}
-                      ></iframe>
-                    </Modal>
-                  </div>
-                  <div className="blog__item blog__slider"></div>
+                  ))}
                 </div>
                 <aside className="aside">
                   <form className="aside__search">
@@ -211,9 +305,21 @@ const Blog = () => {
               </div>
             </div>
           </section>
+          {visiblePosts < 6 && (
+            <div className="container">
+              <div className="blog__items">
+                <div className="blog__show-more">
+                  <button className="blog__show-more-btn" onClick={showMorePosts}>
+                    Show More
+                  </button>
+                </div>
+              </div>
+            </div>
+          )}
         </main>
       </div>
     </>
   );
 };
+
 export default Blog;

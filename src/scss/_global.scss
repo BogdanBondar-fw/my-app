@@ -56,3 +56,25 @@ body {
     height: 12px;
   }
 }
+
+.slick-prev,
+.slick-next {
+  color: #000000;
+  font-size: 0;
+  z-index: 1;
+}
+.slick-prev {
+  left: 10px;
+}
+
+.slick-next {
+  right: 10px;
+}
+
+.slick-prev::before {
+  color: #000000;
+}
+
+.slick-next::before {
+  color: #000000;
+}

@@ -1,8 +1,6 @@
 import { Link } from "react-router-dom";
 import MixGallery from "./component/mixitupgallery";
 
-import "../css/style.css";
-
 const Gallery = () => {
   return (
     <>

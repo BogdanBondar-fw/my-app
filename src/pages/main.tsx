@@ -17,8 +17,6 @@ import Path3 from "../img/path3.svg";
 import ImgLink1 from "../img/img-link1.jpeg";
 import ImgLink2 from "../img/img-link2.jpeg";
 
-import "../css/style.css";
-
 const Main: React.FC = () => {
   const settingsMein = {
     dots: true,
@@ -31,6 +29,7 @@ const Main: React.FC = () => {
     autoplaySpeed: 5000,
     pauseOnFocus: false,
     pauseOnHover: false,
+    arrows: false,
   };
 
   return (
