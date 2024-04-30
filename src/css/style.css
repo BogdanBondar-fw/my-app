@@ -73,6 +73,7 @@ body {
   line-height: 27px;
   color: #5a5a5a;
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .wrapper {
