@@ -1,6 +1,7 @@
 html,
 body {
   height: 100%;
+  overflow-x: hidden;
 }
 
 body {
@@ -10,8 +11,6 @@ body {
   font-size: 16px;
   line-height: 27px;
   color: $default;
-  overflow-x: hidden;
-  overflow-y: hidden;
 }
 
 .wrapper {
