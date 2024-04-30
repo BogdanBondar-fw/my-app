@@ -63,7 +63,6 @@ a {
 html,
 body {
   height: 100%;
-  overflow-x: hidden;
 }
 
 body {
@@ -73,6 +72,7 @@ body {
   font-size: 16px;
   line-height: 27px;
   color: #5a5a5a;
+  overflow-x: hidden;
 }
 
 .wrapper {
