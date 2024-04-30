@@ -1582,6 +1582,9 @@ body.ReactModal__Body--open {
   .top__slider-item {
     margin-left: 100px;
   }
+  .top__slider-text {
+    width: 85%;
+  }
   .contact__social, .contact__box, .contact__form {
     padding-left: 200px;
   }
@@ -1610,6 +1613,9 @@ body.ReactModal__Body--open {
     order: -1;
     margin-bottom: 50px;
   }
+  .top__slider-info {
+    margin-right: 110px;
+  }
 }
 @media (max-width: 992px) {
   .footer__info {
@@ -1630,6 +1636,12 @@ body.ReactModal__Body--open {
   }
   .contact__social, .contact__box, .contact__form {
     padding-left: 180px;
+  }
+  .top__slider-info {
+    margin-left: 0px;
+  }
+  .top__slider-img {
+    height: 540px;
   }
 }
 @media (max-width: 840px) {
@@ -1658,6 +1670,9 @@ body.ReactModal__Body--open {
   }
   .contact__social, .contact__box, .contact__form {
     padding-left: 150px;
+  }
+  .top__slider-img {
+    height: 440px;
   }
 }
 @media (max-width: 768px) {
@@ -1724,6 +1739,9 @@ body.ReactModal__Body--open {
   .contact-slider {
     display: none;
   }
+  .top__slider-img {
+    margin-left: -25%;
+  }
 }
 @media (max-width: 650px) {
   .top__inner {
@@ -1735,6 +1753,12 @@ body.ReactModal__Body--open {
   }
   .top__slider-img {
     display: none !important;
+  }
+  .top__slider-item {
+    margin-left: 10px;
+  }
+  .top__slider-text {
+    width: 90%;
   }
   .works-path__items-box {
     border: none;
@@ -1777,6 +1801,9 @@ body.ReactModal__Body--open {
   }
   .contact__social, .contact__box, .contact__form {
     padding-left: 0px;
+  }
+  .top__slider-info {
+    margin-right: 0px;
   }
 }
 @media (max-width: 540px) {
