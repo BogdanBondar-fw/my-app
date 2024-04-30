@@ -30,6 +30,71 @@ const Contact = () => {
     pauseOnHover: false,
     autoplaySpeed: 5000,
     arrows: false,
+    responsive: [
+      {
+        breakpoint: 1770,
+        settings: {
+          slidesToShow: 9,
+          slidesToScroll: 9,
+        },
+      },
+      {
+        breakpoint: 1570,
+        settings: {
+          slidesToShow: 8,
+          slidesToScroll: 8,
+        },
+      },
+      {
+        breakpoint: 1400,
+        settings: {
+          slidesToShow: 7,
+          slidesToScroll: 7,
+        },
+      },
+      {
+        breakpoint: 1220,
+        settings: {
+          slidesToShow: 6,
+          slidesToScroll: 6,
+        },
+      },
+      {
+        breakpoint: 1070,
+        settings: {
+          slidesToShow: 5,
+          slidesToScroll: 5,
+        },
+      },
+      {
+        breakpoint: 880,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 4,
+        },
+      },
+      {
+        breakpoint: 720,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+        },
+      },
+      {
+        breakpoint: 550,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        },
+      },
+      {
+        breakpoint: 400,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
 
   return (
@@ -57,7 +122,6 @@ const Contact = () => {
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10603.947166732538!2d-122.41739587886445!3d37.800060680266064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808580f18d8c6ea7%3A0x5d7f53fb70a3a903!2s725%20Green%20St%2C%20San%20Francisco%2C%20CA%2094133%2C%20USA!5e0!3m2!1sen!2sua!4v1712931875720!5m2!1sen!2sua"
               title="Google Maps: Location"
               width="100%"
-              height="580"
               style={{ border: "0" }}
               allowFullScreen={true}
               loading="lazy"

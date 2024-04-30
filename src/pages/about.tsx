@@ -62,24 +62,23 @@ const About = () => {
             </div>
           </div>
           <div className="about__popup">
-            <button className="about__popup-play" onClick={() => setModalIsOpen(true)}>
-              <img className="about__popup-imgbtn" src={PlayBtn} alt="play button" />
-            </button>
+            <div className="container">
+              <button className="about__popup-play" onClick={() => setModalIsOpen(true)}>
+                <img className="about__popup-imgbtn" src={PlayBtn} alt="play button" />
+              </button>
+              <Modal isOpen={modalIsOpen} onRequestClose={() => setModalIsOpen(false)} contentLabel="Example Modal">
+                <iframe
+                  src="https://www.youtube.com/embed/JKX0iqwuDpQ?autoplay=1"
+                  title="YouTube video player"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerPolicy="strict-origin-when-cross-origin"
+                  ref={(frame) => {
+                    if (frame) frame.setAttribute("frameBorder", "0");
+                  }}
+                ></iframe>
+              </Modal>
+            </div>
           </div>
-          <Modal isOpen={modalIsOpen} onRequestClose={() => setModalIsOpen(false)} contentLabel="Example Modal">
-            <iframe
-              width="99%"
-              height="99%"
-              src="https://www.youtube.com/embed/JKX0iqwuDpQ?autoplay=1"
-              title="YouTube video player"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerPolicy="strict-origin-when-cross-origin"
-              allowFullScreen
-              ref={(frame) => {
-                if (frame) frame.setAttribute("frameBorder", "0");
-              }}
-            ></iframe>
-          </Modal>
         </section>
         <section className="inspiration">
           <div className="container-fluid">

@@ -23,6 +23,7 @@ const Main: React.FC = () => {
     infinite: true,
     speed: 1000,
     cssEase: "linear",
+    fade: true,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
@@ -73,8 +74,8 @@ const Main: React.FC = () => {
         </section>
         <section className="new-collection">
           <div className="container-fluid">
-            <h3 className="new-collection-title">Furniture new collection</h3>
-            <p className="new-collection-text">
+            <h3 className="new-collection__title">Furniture new collection</h3>
+            <p className="new-collection__text">
               Deep v you probably haven't heard of them banh mi synth actually affogato. Aesthetic lyft ethical drinking
               vinegar austint
             </p>
@@ -141,7 +142,7 @@ const Main: React.FC = () => {
                 </div>
                 <div className="works-path__item works-path__item--production">
                   <img className="works-path__item-img" src={Path2} alt="img"></img>
-                  <h6 className="works-path__item-title">Production</h6>
+                  <h6 className="works-path__item-title">Production </h6>
                   <p className="works-path__item-text">Everyday carry actually neutra authentic kogi shabby chic</p>
                 </div>
               </div>
